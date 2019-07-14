@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function myDate(day, mont, year) {
+        this.ngay = day;
+        this.thang = mont;
+        this.year = year;
+
+        this.getDay = function () {
+            return this.ngay;
+        };
+        this.getMont = function () {
+            return this.thang
+        };
+        this.getYear = function () {
+            return this.year
+        };
+        // this.setDay = function (day) {
+        //     this.ngay = day;
+        //
+        // };
+        // this.setMont = function (mont) {
+        //     this.thang = mont;
+        //
+        // };
+        // this.setYear = function (year) {
+        //     this.year = year;
+        // };
+
+            
+
+        this.setDate=function (day,mont,year) {
+            this.ngay=day;
+            this.thang=mont;
+            this.year=year;
+            
+        }
+
+
+    }
+
+
+    let date = new myDate(2, 3, 2018);
+    // let day = date.getDay();
+    // let mont = date.getMont();
+    // let year = date.getYear();
+    // date.setDay(10);
+    // date.setMont(12);
+    // date.setYear(2019);
+    date.setDate(21,12,2012);
+    let day1 = date.getDay();
+    let mont1 = date.getMont();
+    let year1 = date.getYear();
+
+    document.write(day1,mont1,year1);
+
+</script>
+</body>
+</html>
